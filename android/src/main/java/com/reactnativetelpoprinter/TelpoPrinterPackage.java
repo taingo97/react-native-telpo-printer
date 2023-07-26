@@ -17,6 +17,7 @@ public class TelpoPrinterPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new TelpoPrinterModule(reactContext));
+        modules.add(new UsbPrinterModule(reactContext));
         return modules;
     }
 
